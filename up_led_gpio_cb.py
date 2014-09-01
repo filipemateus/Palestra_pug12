@@ -9,4 +9,5 @@ while True:
   if (str(ser.read()) == 1):
     os.system('echo "high" > /sys/class/gpio/gpio1_ph20')
     sleep(1)
+    os.system('echo "low" > /sys/class/gpio/gpio1_ph20')
  
